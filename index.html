@@ -6,107 +6,309 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colloque MMI</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/hub.css">
+    <link rel="stylesheet" href="HUB/css/reset.css">
+    <link rel="stylesheet" href="HUB/css/hub.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
-    <script src="JS/base.js" defer></script>
+    <script src="HUB/JS/base.js" defer></script>
 </head>
 <body>
 
 <div class="premiere-partie">
     <p>.</p>
     <header>
+        <!----
     <div class="navbar">
-            <a href ="index.html" class="bar"><img class="logo" src="images/Logo.svg" alt="Logo Digital Natives, un N mélangée à un D"></a>
+            <a href ="index.html" class="bar"><img class="logo" src="HUB/images/Logo.svg" alt="Logo Digital Natives, un N mélangée à un D"></a>
+            <a href="#presentation" class="bar" data-scroll="presentation">Présentation</a>
+            <a href="#derniercolloque" class="bar" data-scroll="derniercolloque">Dernier colloque</a>
+            <a href="#archive" class="bar" data-scroll="archive">Archives</a> 
+           
+    </div>-->
+    <div class="navbar">
+        <div class="container nav-container">
+            <a href ="index.html" class="bar"><img class="logo" src="HUB/images/Logo.svg" alt="Logo Digital Natives, un N mélangée à un D"></a>
             <a href="#presentation" class="bar" data-scroll="presentation">Présentation</a>
             <a href="#derniercolloque" class="bar" data-scroll="derniercolloque">Dernier colloque</a>
             <a href="#archive" class="bar" data-scroll="archive">Archives</a>
             <a href="#intervenant" class="bar" data-scroll="intervenant">Intervenant</a>
-    </div>
+            <input class="checkbox" type="checkbox"/>
+            
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+
+          <div class="menu-items">
+            <a href="#presentation" class="burger" data-scroll="presentation">Présentation</a>
+            <a href="#derniercolloque" class="burger" data-scroll="derniercolloque">Dernier colloque</a>
+            <a href="#archive" class="burger" data-scroll="archive">Archives</a>
+            <a href="#intervenant" class="burger" data-scroll="intervenant">Intervenant</a>
+          </div>
+        </div>
+      </div>
 </header>
 
-    <div class="corps">
-        <p class="titre" id="presentation">Le colloque MMI</p>
-        <p class="titre2" >DIGITAL NATIVES</p>
-    </div>
+<div class="corps">
+    <p class="titre" id="presentation">Le colloque MMI</p>
+    <p class="titre2" >DIGITAL NATIVES</p>
+</div>
 </div>
 <div class="deuxieme-partie">
-    <div class="bloc">
-        <div class="bloctexte">
-            <p class="titre3">UN ÉVÉNEMENT ENGAGÉ</p>
-            <p class ="paragraphe">Sensibiliser sur des <strong>sujets sociétaux</strong> en lien avec le numérique:<br>
-                c’est le défi que se sont lancés les étudiants passionnés de <strong>Métiers du<br>
-                Multimédia et de l’Internet (MMI)</strong> de l’université Bordeaux Montaigne.<br>
-                Digital Natives , une journée scientifique qui se dédie à <strong>éveiller les<br>
-                consciences</strong> des utilisateurs dans un monde où la technologie est de<br>
-                plus en plus prépondérante.</p>
-        </div>
-        <img class="imageparagraphe" src="images/placeholder.png" alt="placeholder">
+<div class="bloc">
+    <div class="bloctexte">
+        <p class="titre3">UN ÉVÉNEMENT ENGAGÉ</p>
+        <p class ="paragraphe">Sensibiliser sur des <strong>sujets sociétaux</strong> en lien avec le numérique:<br>
+            c’est le défi que se sont lancés les étudiants passionnés de <strong>Métiers du<br>
+            Multimédia et de l’Internet (MMI)</strong> de l’université Bordeaux Montaigne.<br>
+            Digital Natives , une journée scientifique qui se dédie à <strong>éveiller les<br>
+            consciences</strong> des utilisateurs dans un monde où la technologie est de<br>
+            plus en plus prépondérante.</p>
     </div>
+    <img class="imageparagraphe" src="HUB/images/placeholder.png" alt="placeholder">
+</div>
 </div>
 <div class="troisieme-partie">
-    <div class="bloc">
-        <div class="bloctexte">
-            <p class="titre4" id="derniercolloque">Dernier colloque en date</p>
-            <p class="titre5" >Handicap & Numérique</p>
-    </div>
-        <div class="boutoncontour">
-            <a href="#"> <p class="bouton" >DÉCOUVRIR</p></a>
-        </div>
-    </div>
-    <p class="titre6" id="archive">Archives</p>
-    <div class="blocimage">
-        <a href="wip.html"><img class="carte2023" onclick="autoScroll()" src="images/placeholder cartetexte.png" alt="carte 2023"></a>
-        <a href="2022.html"><img class="carte2022" src="images/image2022text.png" alt="carte 2022"></a>
-    </div>
-    <p class="titre7" id="intervenant">Intervenants</p>
-    <div class="intervenant1">
-        <div class="intervenantbox">
-            <p class="nom-intervenant">André Vitalis - Profession principale</p>
-            <svg class="fleche" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.6 20L0.5 17.9L14.9 3.5H2V0.5H20V18.5H17V5.6L2.6 20Z" fill="white"/>
-                </svg>                
-        </div>
-    </div>
-    <div class="intervenant2">
-        <div class="intervenantbox">
-            <p class="nom-intervenant">Raphael Marzak - Profession principale</p>
-            <svg class="fleche" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.6 20L0.5 17.9L14.9 3.5H2V0.5H20V18.5H17V5.6L2.6 20Z" fill="white"/>
-                </svg>   
-        </div>
-    </div>
-        <div class="intervenant3">
-            <div class="intervenantbox">
-                <p class="nom-intervenant">André Vitalis - Profession principale</p>
-                <svg class="fleche" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.6 20L0.5 17.9L14.9 3.5H2V0.5H20V18.5H17V5.6L2.6 20Z" fill="white"/>
-                    </svg>   
-            </div>
-        </div>
-    <div class =intervenanthide" id="hide" style="display: none">
-        <div class="intervenant3">
-            <div class="intervenantbox">
-                <p class="nom-intervenant">Pablo CASOLA - Profession principale</p>
-                <svg class="fleche" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.6 20L0.5 17.9L14.9 3.5H2V0.5H20V18.5H17V5.6L2.6 20Z" fill="white"/>
-                    </svg>   
-            </div>
-        </div>
-        <div class="intervenant3">
-            <div class="intervenantbox">
-                <p class="nom-intervenant">Oscar Motta - Profession principale</p>
-                <svg class="fleche" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.6 20L0.5 17.9L14.9 3.5H2V0.5H20V18.5H17V5.6L2.6 20Z" fill="white"/>
-                    </svg>   
-            </div>
-        </div>
-    </div>
-    <div class="voirplus-container">
-        <p class="voirpluscss" id="voirplus">voir plus</p>
+<div class="bloc2">
+    <div class="bloctexte">
+        <p class="titre4" id="derniercolloque">Dernier colloque en date</p>
+        <p class="titre5" >Handicap & Numérique</p>
+</div>
+    <div class="boutoncontour">
+        <a href="wip.html"> <p class="bouton" >DÉCOUVRIR</p></a>
     </div>
 </div>
+<div class="archives">
+<p class="titre6" id="archive">Archives</p>
+    <div class="blocimage">
+        <a href="wip.html"><img class="carte2023 card" onclick="autoScroll()" src="HUB/images/placeholder cartetexte.png" alt="carte 2023"></a>
+        <a href="2022.html"><img class="carte2022 card" src="HUB/images/image2022text.png" alt="carte 2022"></a>
+    </div>
+</div>
+<div>
+    <p class="titre6" style="margin-top: 90px; margin-left: 11vw;"> Où nous trouver ? </p>
+    <div class="maps">
+        <iframe class="maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.5571178581376!2d-0.5643382485046694!3d44.830586478996054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55264a9fd1515f%3A0x2069c2b4402ca5e2!2sIUT%20Bordeaux%20Montaigne!5e0!3m2!1sfr!2sfr!4v1677080375864!5m2!1sfr!2sfr" 
+        width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<style>
+
+footer{
+    background-color: black;
+    margin: 0px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-a{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    text-decoration: none;
+}
+.footer-a:hover{
+
+    text-decoration: underline;
+}
+body{
+    margin: 0px;
+}
+
+
+footer .logo{
+    width: 75px;
+    margin-left: 4.5vw;
+}
+footer h3{
+    font-family: 'Hind';
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.contenu-footer-1{
+    margin-top: 76px ;
+    display: flex;
+    flex-direction: row;
+    margin-left: 4.5vw;
+    width: calc(100vw - 9vw);
+    justify-content: space-between;
+}
+
+.soc-foot{
+    width: 65px;
+    margin-right: 4vw;
+}
+.bloc-contenu{
+    margin-bottom: 35px;
+}
+.bloc-contenu *{
+    margin-bottom: 35px;
+    margin-bottom: 10px;
+}
+.soc-img{
+    display: flex;
+}
+
+.legal-footer{
+    display: flex;
+    margin-left: 4.5vw;
+    width: 19vw;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .contenu-footer-1{
+        flex-direction: column;
+        
+    margin-left: 17vw;
+    width: calc(100vw - 34vw);
+    }
+    .legal-footer{
+        margin-left:17vw ;
+        width: calc(100vw - 34vw) ;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .mobile-display-n{
+        display: none;
+    }
+    .contenu-footer-1{
+        justify-content: space-evenly;
+    }
+}
+</style>
+
+  <footer>
+    <img src="images/logo.webp" alt="" class="logo">
+    
+    <div class="contenu-footer-1">
+    <div class="colonne-footer">
+    
+        <div class="bloc-contenu">
+            <h3>Accueil</h3>
+            
+        </div>
+        <div class="bloc-contenu">
+            <h3>Colloques MMI</h3>
+            <a href="" class="footer-a"><p>Edition 2023</p></a>
+            <a href="" class="footer-a"><p>Edition 2022</p></a>
+            
+        </div>
+        <div class="bloc-contenu">
+            <h3>Programme</h3>
+            
+        </div>
+    
+    </div>
+    
+    <div class="colonne-footer mobile-display-n">
+    
+        <div class="bloc-contenu">
+            <h3>PUBLIC</h3>
+            <a href="" class="footer-a"><p>Informations</p></a>
+            <a href="" class="footer-a"><p>Intervenants</p></a>
+            <a href="" class="footer-a"><p>Poster</p></a>
+            <a href="" class="footer-a"><p>Ouvrage</p></a>
+            <a href="" class="footer-a"><p>Live</p></a>
+            
+        </div>
+        <div class="bloc-contenu">
+            <h3>DISPOSITIFS INNOVANTS</h3>
+            <a href="" class="footer-a"><p>Informations</p></a>
+            <a href="" class="footer-a"><p>Intervenants</p></a>
+            <a href="" class="footer-a"><p>Poster</p></a>
+            <a href="" class="footer-a"><p>Ouvrage</p></a>
+            <a href="" class="footer-a"><p>Live</p></a>
+            
+            
+        </div>
+    
+    </div>
+    
+    <div class="colonne-footer mobile-display-n" >
+    
+        <div class="bloc-contenu">
+            <h3>ACCESSIBILITÉ</h3>
+            <a href="" class="footer-a"><p>Informations</p></a>
+            <a href="" class="footer-a"><p>Intervenants</p></a>
+            <a href="" class="footer-a"><p>Poster</p></a>
+            <a href="" class="footer-a"><p>Ouvrage</p></a>
+            <a href="" class="footer-a"><p>Live</p></a>
+            
+        </div>
+        <div class="bloc-contenu">
+            <h3>INCLUSIVITÉ</h3>
+            <a href="" class="footer-a"><p>Informations</p></a>
+            <a href="" class="footer-a"><p>Intervenants</p></a>
+            <a href="" class="footer-a"><p>Poster</p></a>
+            <a href="" class="footer-a"><p>Ouvrage</p></a>
+            <a href="" class="footer-a"><p>Live</p></a>
+            
+            
+        </div>
+    </div>
+    
+    <div class="colonne-footer">
+    
+        <div class="bloc-contenu">
+            <h3>NOUS CONTACTER</h3>
+            <a href="" class="footer-a"><p>1 Rue Jacques Ellul, 33800  BORDEAUX</p></a>
+            <a href="" class="footer-a"><p>05 57 12 20 40</p></a>
+            <a href="" class="footer-a"><p>mmibordeaux@mmibordeaux.com</p></a>
+            <a href="" class="footer-a"><p>colloquemmi@mmibordeaux.com</p></a>
+            
+        </div>
+        <div class="bloc-contenu">
+            <h3>À PROPOS</h3>
+            <a href="" class="footer-a"><p>Les intervenants</p></a>
+            <a href="" class="footer-a"><p>Les élèves MMI</p></a>
+            <a href="" class="footer-a"><p>Les professeurs</p></a>
+            
+            
+        </div>
+        <div class="bloc-contenu-soc">
+            <h3>NOS RÉSEAUX</h3>
+            <div class="soc-img">
+            <a href="#"><img src="images/twitch.webp" alt="twitch logo" class="soc-foot"></a>
+            <a href="#"><img src="images/insta.webp" alt="insta logo" class="soc-foot"></a>
+        </div>
+            
+        </div>
+    
+    </div>
+    </div>
+    <div class="legal-footer">
+    
+        <a href="" class="footer-a"><p>Mentions légales</p></a>
+        <a href="" class="footer-a"><p>À propos</p></a>
+    </div>
+        </footer>
+
+     
 </body>
 </html>
-
