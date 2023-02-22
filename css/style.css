@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: 'FuturaPTDemi';
+    src: url('../fonts/FuturaPTDemi.otf');
+}
+
+@font-face {
+    font-family: 'FuturaPTHeavy';
+    src: url('../fonts/FuturaPTHeavy.otf');
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../fonts/GothamBook.ttf');
+}
+
+body {
+    background-image: url('../images/bg.png');
+    color: white;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+h1 {
+    font-family: 'FuturaPTHeavy';
+    font-size: 4.5vw;
+    margin: 0 0 0.1em;
+}
+p {
+    font-size: 1.5vw;
+    color: whitesmoke;
+    font-family: 'GothamBook';
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 8vw;
+    }
+    p {
+        font-size: 4vw;
+    }
+}
+
+.loading {
+    animation: appear 1s linear;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

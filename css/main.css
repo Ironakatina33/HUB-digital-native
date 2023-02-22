@@ -1,0 +1,1079 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+@import url(variables.scss);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Colors */
+/* Typography */
+/* Font size */
+/* Font Family */
+@font-face {
+    font-family: "FuturaPTHeavy";
+    src: url(../fonts/FuturaPTHeavy.otf);
+}
+
+@font-face {
+    font-family: "GloriaHallelujah";
+    src: url(../fonts/GloriaHallelujah-Regular.ttf);
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url(../fonts/Gotham-Light.otf);
+}
+
+/*-------------------*/
+/* Utility classes */
+/*-------------------*/
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+/* Colors */
+.bgBlack {
+    background-color: #181818;
+}
+
+.bgWhite {
+    background-color: #ffffff;
+}
+
+.bgBlue {
+    background-color: #54ebff;
+}
+
+.bgDarkBlue {
+    background-color: #2230b1;
+}
+
+.bgPink {
+    background-color: #ff00f5;
+}
+
+.bgGreen {
+    background-color: #00d079;
+}
+
+.bgOrange {
+    background-color: #ffb13d;
+}
+
+.txtBlack {
+    color: #181818;
+}
+
+.txtWhite {
+    color: #ffffff;
+}
+
+.txtBlue {
+    color: #54ebff;
+}
+
+.txtDarkBlue {
+    color: #2230b1;
+}
+
+.txtPink {
+    color: #ff00f5;
+}
+
+.txtGreen {
+    color: #00d079;
+}
+
+.txtOrange {
+    color: #ffb13d;
+}
+
+.borderBlack {
+    border-color: #181818;
+}
+
+.borderWhite {
+    border-color: #ffffff;
+}
+
+.borderBlue {
+    border-color: #54ebff;
+}
+
+.borderDarkBlue {
+    border-color: #2230b1;
+}
+
+.borderGreen {
+    border-color: #00d079;
+}
+
+.borderPink {
+    border-color: #ff00f5;
+}
+
+.borderOrange {
+    border-color: #ffb13d;
+}
+
+/* Typography */
+.letter-spacing-1 {
+    letter-spacing: 4.75px;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2.7px;
+}
+
+.letter-spacing-3 {
+    letter-spacing: 2.35px;
+}
+
+.fsTitle {
+    font-size: 4rem;
+}
+
+.fsSsTitle {
+    font-size: 2.125rem;
+}
+
+.fsText {
+    font-size: 1.125rem;
+}
+
+.ffFutura {
+    font-family: "FuturaPTheavy";
+}
+
+.ffGotham {
+    font-family: "GothamLight";
+}
+
+.ffGloria {
+    font-family: "GloriaHallelujah";
+}
+
+.banner1 {
+    background: linear-gradient(#2230b1, #54ebff);
+    height: 100vh;
+    width: 10vw;
+}
+
+.banner2 {
+    background: linear-gradient(#ffb13d, #54ebff);
+    height: 100vh;
+    width: 10vw;
+}
+
+.banner3 {
+    background: linear-gradient(#00d079, #54ebff);
+    height: 100vh;
+    width: 10vw;
+}
+
+.banner4 {
+    background: linear-gradient(#ff00f5, #54ebff);
+    height: 100vh;
+    width: 10vw;
+}
+
+.side {
+    width: 50vw;
+    height: 100vh;
+}
+
+.sideContainer {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+/* @media screen and (max-width: 768px) {
+    .sideContainer {
+        display: block;
+    }
+} */
+
+.left {
+    position: relative;
+}
+
+/************************* LEFT SIDE ***********************************/
+.hOnNavBar {
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    z-index: 3;
+    overflow: hidden;
+    transition: width 0.5s;
+    transition-timing-function: cubic-bezier(0.93, -0.04, 1, 0.93);
+}
+
+.hambOn {
+    width: 100% !important;
+}
+
+.hambAnim {
+    height: 2rem !important;
+}
+
+.hambAnim > .line {
+    transform: rotateZ(45deg) translateY(-50%) !important;
+}
+
+.hambAnim::before {
+    transform: scale(0) !important;
+}
+
+.hambAnim::after {
+    transform: rotateZ(-45deg) translateY(55%);
+    bottom: 50% !important;
+}
+
+.textWhite {
+    position: relative;
+    padding: 2rem 3rem;
+    background-color: rgba(255, 255, 255, 0.014);
+    backdrop-filter: blur(3px);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 90%;
+    margin: 3.5rem 0;
+}
+
+.textWhite h1 {
+    font-size: 4rem;
+    font-family: "FuturaPTheavy";
+}
+
+.textWhite h2 {
+    font-size: 2.125rem;
+    font-family: "FuturaPTheavy";
+}
+
+.textWhite p {
+    font-size: 1.125rem;
+    margin: 1.2rem 0;
+    font-family: "GothamLight";
+}
+
+.popProgramme {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(110%);
+    z-index: -1;
+    z-index: 20;
+    transition: all 0.4s;
+    width: 50vw;
+}
+
+.showPop {
+    z-index: 20;
+}
+
+@keyframes showPopUp {
+    0% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.hNavBar {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.programmeSec {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(2rem, 1rem);
+    margin-top: 10rem;
+}
+
+#bHG {
+    transform: translate(-50px, -50px);
+}
+
+#bHD {
+    right: 15%;
+    transform: translateY(-10px);
+}
+
+#bM {
+    right: 2%;
+    top: 50%;
+}
+
+#bBG {
+    left: 5%;
+    bottom: 6%;
+}
+
+#bBD {
+    right: 0;
+    bottom: 0;
+    transform: translateY(80%);
+}
+
+/************************* Right SIDE ***********************************/
+.bande {
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.buttonProg {
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20%;
+    right: 2%;
+}
+
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    padding: 0.7rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    z-index: 4;
+    transition: 0.4s;
+}
+
+.hamburger .line {
+    height: 4px;
+    width: 2rem;
+    border-radius: 50% / 13px;
+    background-color: #54ebff;
+    transition: 0.4s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 2rem;
+    border-radius: 50% / 13px;
+    background-color: #ffffff;
+    transition: 0.4s;
+    position: absolute;
+    left: 0;
+}
+
+.hamburger::before {
+    top: 0;
+}
+
+.hamburger::after {
+    bottom: 0;
+}
+
+.programme {
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    gap: 2rem;
+}
+
+.programme p {
+    margin: 0;
+}
+
+.programme:hover .croix {
+    transform: rotate(360deg);
+}
+
+.programmeLink {
+    color: #ffffff;
+}
+
+.bublle {
+    position: absolute;
+}
+
+.croixMinus .croix::before {
+    transform: rotate(0deg) !important;
+    position: relative;
+    z-index: -1;
+    width: 0;
+}
+
+.croix {
+    position: relative;
+    transition: all 1s;
+}
+
+.croix::before,
+.croix::after {
+    content: "";
+    display: block;
+    height: 2.3px;
+    width: 1.6rem;
+    border-radius: 50% / 13px;
+    transition: all 0.3s;
+}
+
+.croix::after {
+    background-color: #54ebff;
+}
+
+.croix::before {
+    position: absolute;
+    transform: rotate(90deg);
+    background-color: white;
+}
+
+.btn {
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.mainNav {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.mainNav a {
+    text-decoration: none;
+    color: white;
+}
+
+.mainNav li {
+    position: relative;
+    cursor: pointer;
+}
+
+.mainNav li p {
+    z-index: 2;
+    position: relative;
+}
+
+.mainNav li::before {
+    content: "";
+    display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-out;
+}
+
+.mainNav li:hover::before {
+    height: 100%;
+}
+
+.mainNav li:hover p {
+    mix-blend-mode: difference;
+}
+
+.editionCard {
+    padding: 10px;
+    width: 100%;
+    min-height: 15%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.editionCard > article {
+    width: fit-content;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.editionCard > article h2,
+.editionCard > article p {
+    z-index: 2;
+    position: relative;
+}
+
+.tacheLeft {
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -40%) rotate(180deg);
+}
+
+.tacheRight {
+    right: 0;
+    transform: translate(50%, 40%);
+    bottom: 0;
+}
+
+.tacheLeft,
+.tacheRight {
+    position: absolute;
+    z-index: 0;
+}
+
+.progCroix {
+    transform: rotate(45deg);
+    width: fit-content;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.progCroix::before {
+    background-color: #181818 !important;
+}
+
+.progCroixWhite::before {
+    background-color: #ffffff !important;
+}
+
+#popSection {
+    color: #ffffff;
+}
+
+#popSection h1,
+#popSection h2 {
+    font-family: "FuturaPTheavy";
+}
+
+#popSection h1 {
+    font-size: 4rem;
+}
+
+#popSection h2 {
+    font-size: 2.125rem;
+}
+
+#popSection p {
+    font-family: "GothamLight";
+    font-size: 1.125rem;
+}
+
+.popProgramme {
+    padding: 3rem 1rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.popProgramme > div {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.popProgramme > div h1,
+.popProgramme > div p {
+    display: inline;
+}
+
+.navTable {
+    background-color: black;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    width: 10vh;
+    border-right: 1px solid #54ebff;
+    font-family: "GothamLight";
+    z-index: 3;
+}
+
+.navTable a {
+    color: white;
+}
+
+.navTable ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.navTable li {
+    color: white;
+}
+
+.navTable .navBoxText {
+    display: flex;
+}
+
+.navTable .navBoxText li {
+    transform: rotate(270deg);
+    margin: 50px;
+}
+
+.navTable .navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navTable .navBox {
+    display: flex;
+    justify-content: center;
+}
+
+.navTable .programme {
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.navTable .programme p {
+    margin: 0;
+}
+
+.navTable .programme:hover .croix {
+    transform: rotate(360deg);
+}
+
+.navTable .flex {
+    display: block;
+}
+
+.tableOuterSection {
+    display: flex;
+    width: fit-content;
+    height: 100vh;
+    background: black;
+    font-family: "FuturaPTheavy";
+}
+
+.tableWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.slide {
+    padding: 5vh 0;
+    width: 100vw;
+    height: 100vh;
+    color: #ffffff;
+    padding-top: 5vw;
+}
+
+.landingTableBox {
+    padding-left: 20vw;
+    margin: 0 auto;
+    font-family: "FuturaPTheavy";
+}
+
+.tableTitle {
+    font-size: 3.5rem;
+}
+
+.tableProgramList {
+    margin: 10% auto;
+}
+
+.tablePart {
+    font-size: 2rem;
+    margin: 3% 0;
+    display: flex;
+    align-content: center;
+}
+
+.tableSubTitle {
+    align-self: center;
+    color: white;
+    cursor: pointer;
+}
+
+.tableSubTitle:hover {
+    transition: 0.5s ease-in-out;
+    color: #54ebff;
+}
+
+#posterImg {
+    background-image: url("https://pbs.twimg.com/media/EgvrZiEWkAEPS_z.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tablePoster {
+    position: relative;
+    left: -20vw;
+    height: 100vh;
+    width: 80vh;
+    z-index: 0;
+}
+
+.textPoster {
+    width: 100%;
+    align-self: center;
+    position: relative;
+    top: 15%;
+}
+
+.titlePoster {
+    font-size: 2.125rem;
+    margin: 5% 0;
+}
+
+.txtPoster {
+    width: 100%;
+    font-size: 1.125rem;
+}
+
+.directLiveSection {
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.liveFlex {
+    width: 33vw;
+    position: relative;
+    display: block;
+}
+
+.titleBoxLive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.subtitleBoxLive {
+    display: flex;
+}
+
+.tableSubTitle {
+    width: 100%;
+    font-size: 2.125rem;
+}
+
+.iconLive {
+    width: 20%;
+}
+
+.imgBoxHost {
+    border-radius: 10px;
+    margin: 5vh 0;
+    width: 200px;
+    height: 200px;
+}
+
+.imgHost {
+    margin: 0 5% 10%;
+    width: 90%;
+    height: 100%;
+}
+
+.hostBanner {
+    background: blue;
+    position: absolute;
+    bottom: 26.97%;
+    left: -40%;
+    transform: rotate(-90deg);
+    text-align: center;
+    height: 5vh;
+    width: 54vh;
+    align-items: center;
+}
+
+.hostName {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 25%;
+    z-index: 3;
+}
+
+.liveMiddle,
+.liveRight {
+    padding-top: 10vh;
+}
+
+.liveSection {
+    margin-bottom: 10vh;
+}
+
+.intervenant {
+    display: flex;
+    justify-content: center;
+}
+
+.leftInter {
+    width: 40%;
+    margin: 0;
+}
+
+.imgBoxIntervenant {
+    display: flex;
+    height: 80%;
+    position: relative;
+}
+
+.bannerIntervenant {
+    background: #2230b1;
+    min-height: 100%;
+    position: relative;
+    display: block;
+    width: 3vw;
+}
+
+.titleBannerIntervenant {
+    position: absolute;
+    text-align: center;
+    bottom: 50%;
+    z-index: 1;
+}
+
+.middleInter {
+    width: 40%;
+    height: 50vh;
+    margin: 7% 0;
+    position: relative;
+}
+
+.nomBoxIntervenant {
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+.infoInter {
+    margin: 10% 0;
+    line-height: 2;
+    font-family: "FuturaPTheavy";
+    font-weight: 100;
+}
+
+.btnBoxNext {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    background: #2230b1;
+    padding: 10px 15px;
+    width: 10vw;
+}
+
+.imgBtnNext {
+    width: 20%;
+    margin: 0 1%;
+}
+@media screen and (max-width: 950px) {
+    .textWhite h1 {
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 850px) {
+    .textWhite h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .sideContainer {
+        display: block;
+    }
+    .side {
+        width: 100%;
+    }
+    .hNavBar {
+        margin-top: 0;
+    }
+    .textWhite h1 {
+        font-size: 2.5rem;
+    }
+    .hamburger {
+        margin-top: 15px;
+    }
+    #popSection h1 {
+        font-size: 3rem;
+    }
+
+    #popSection h2 {
+        font-size: 1.75rem;
+    }
+
+    #popSection p {
+        font-family: "GothamLight";
+        font-size: 0.8rem;
+    }
+    .popProgramme {
+        justify-content: flex-start;
+    }
+    .popProgramme article {
+        margin: 20px 0;
+    }
+}
+
+/*# sourceMappingURL=main.css.map */

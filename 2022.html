@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <title>Index -</title>
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <main class="sideContainer">
+            <section class="side left bgBlack">
+                <img
+                    class="bublle"
+                    id="bHG"
+                    src="./images/2022/tachesbleues/hg.png"
+                    alt=""
+                    popUpProg.style.width="100%"
+                    ;
+                    popUpProg.style.transform="translateX(0px)"
+                    ;
+                />
+                <img
+                    src="/images/2022/tachesbleues/hd.png"
+                    alt=""
+                    class="bublle"
+                    id="bHD"
+                />
+                <img
+                    src="./images/2022/tachesbleues/m.png"
+                    alt=""
+                    class="bublle"
+                    id="bM"
+                />
+                <img
+                    src="./images/2022/tachesbleues/bg.png"
+                    alt=""
+                    class="bublle"
+                    id="bBG"
+                />
+                <img
+                    src="./images/2022/tachesbleues/bd.png"
+                    alt=""
+                    class="bublle"
+                    id="bBD"
+                />
+                <nav class="flex hNavBar">
+                    <div></div>
+                    <div class="hamburger" onclick="hamb()">
+                        <div class="line blue"></div>
+                    </div>
+                </nav>
+                <nav class="hOnNavBar bgBlack">
+                    <ul class="flex txtWhite mainNav">
+                        <a href="./index.html"
+                            ><li><p class="ffGotham">Home</p></li></a
+                        >
+                        <a href="./pages/2022/poster.html"
+                            ><li><p class="ffGotham">Poster</p></li></a
+                        >
+                    </ul>
+                </nav>
+                <script>
+                    function hamb() {
+                        const hOnNavBar =
+                            document.getElementsByClassName("hOnNavBar");
+                        const hambToggle =
+                            document.getElementsByClassName("hamburger");
+                        hOnNavBar[0].classList.toggle("hambOn");
+                        hambToggle[0].classList.toggle("hambAnim");
+                    }
+                </script>
+                <article class="textWhite txtWhite">
+                    <h2>Édition 2022</h2>
+                    <h1>CONFIANCE</h1>
+                    <p>
+                        « On « croit » en une personne, sans que cette foi soit
+                        justifiée par les preuves que cette personne en est
+                        digne, et même, bien souvent, malgré la preuve du
+                        contraire. » <br />
+                        <br />Georg Simmel (1858-1918) - Sociologie. Étude sur
+                        les formes de la socialisation
+                    </p>
+                    <section class="programmeSec flex">
+                        <div></div>
+                        <a href="" class="programmeLink programmePopBtn">
+                            <div class="flex programme btn bgBlack">
+                                <p class="ffGotham">Programme</p>
+                                <div class="croix"></div>
+                            </div>
+                        </a>
+                    </section>
+                </article>
+            </section>
+            <section class="side right TableContainer bgBlack">
+                <!---->
+                <section
+                    class="bande txtWhite bgBlack"
+                    style="
+                        height: calc(100vh / 4);
+                        background-image: url(./images/2022/donnees.jpg);
+                    "
+                >
+                    <div class="flex buttonProg">
+                            <div class="flex programme btn bgBlack">
+                                <p class="ffGotham">
+                                    Confiance et données - 9h à 11h
+                                </p>
+                            </div>
+                    </div>
+                </section>
+                <section
+                    class="bande txtWhite bgBlack"
+                    style="
+                        height: calc(100vh / 4);
+                        background-image: url(./images/2022/espace.jpg);
+                    "
+                >
+                    <div class="flex buttonProg">
+                            <div class="flex programme btn bgBlack">
+                                <p class="ffGotham">
+                                    Confiance et espaces - 11h à 13h
+                                </p>
+                            </div>
+                    </div>
+                </section>
+                <section
+                    class="bande txtWhite bgBlack"
+                    style="
+                        height: calc(100vh / 4);
+                        background-image: url(./images/2022/publics.jpg);
+                    "
+                >
+                    <div class="flex buttonProg">
+                            <div class="flex programme btn bgBlack">
+                                <p class="ffGotham">
+                                    Confiance et publics - 14h à 16h
+                                </p>
+                            </div>
+                    </div>
+                </section>
+                <section
+                    class="bande txtWhite bgBlack"
+                    style="
+                        height: calc(100vh / 4);
+                        background-image: url(./images/2022/innovation.jpg);
+                    "
+                >
+                    <div class="flex buttonProg">
+                            <div class="flex programme btn bgBlack">
+                                <p class="ffGotham">
+                                    Confiance et innovation - 16h à 18h
+                                </p>
+                            </div>
+                    </div>
+                </section>
+            </section>
+            <article class="bgBlack popProgramme" id="popSection">
+                <div class="flex">
+                    <article>
+                        <h1 class="ffGotham fsText">PROGRAMME</h1>
+                        <p>de chaque table</p>
+                    </article>
+                    <div class="croix progCroix progCroixWhite"></div>
+                </div>
+                <article class="progTextBlock">
+                    <h2>Présentation de l'ouvrage :</h2>
+                    <p>
+                        10 minutes en live le jour du colloque<br />et vidéo de
+                        10 minutes mise en ligne à la suite du colloque
+                    </p>
+                </article>
+                <article class="progTextBlock">
+                    <h2>Présentation d'un poster scientifique :</h2>
+                    <p>
+                        5 minutes de présentation le jour du colloque <br />
+                        puis disponible en vidéo à la suite du colloque
+                    </p>
+                </article>
+                <article class="progTextBlock">
+                    <h2>Retex 1 :</h2>
+                    <p>
+                        Intervention de 20 minutes puis 10 minutes de questions
+                    </p>
+                </article>
+                <article class="progTextBlock">
+                    <h2>Retex 2 ou Communication :</h2>
+                    <p>
+                        Intervention de 20 minutes puis 10 minutes de questions
+                    </p>
+                </article>
+                <article class="progTextBlock">
+                    <h2>Conclusion :</h2>
+                    <p>
+                        Vidéo de 3 minutes de conclusion pour favoriser la
+                        transition des tables
+                    </p>
+                </article>
+            </article>
+        </main>
+
+        <script>
+            const progBtnTmp =
+                document.getElementsByClassName("programmePopBtn");
+            const progBtn = progBtnTmp[0].children;
+            const progCroix = document.getElementsByClassName("progCroix");
+
+            progCroix[0].onclick = function () {
+                progBtn[0].classList.toggle("croixMinus");
+                hide();
+            };
+            const popUpProg = document.getElementById("popSection");
+
+            const RightSide = document.getElementsByClassName("TableContainer");
+
+            var toggle = false;
+
+            progBtn[0].addEventListener("click", (e) => {
+                e.preventDefault();
+
+                progBtn[0].classList.toggle("croixMinus");
+
+                if (toggle == false) {
+                    console.log(toggle);
+                    for (var i = 0; i < RightSide[0].children.length; i++) {
+                        const bandeau = RightSide[0].children[i];
+                        var delay = 0.1;
+                        console.log(bandeau);
+                        bandeau.style.transform = "translateX(100%)";
+                        bandeau.style.transitionDelay = i * delay + "s";
+                        //second console output
+                    }
+                    if (innerWidth < 740) {
+                        popUpProg.style.width = "100%";
+                        popUpProg.style.transform = "translateX(0px)";
+                    } else popUpProg.style.transform = "translateX(0)";
+                    popUpProg.style.transitionDelay = 6 * delay + "s";
+                    toggle = true;
+                } else if (toggle == true) {
+                    hide();
+                }
+            });
+            function hide() {
+                popUpProg.style.transform = "translateX(110%)";
+                popUpProg.style.transitionDelay = "0s";
+
+                for (var i = 0; i < RightSide[0].children.length; i++) {
+                    const bandeau = RightSide[0].children[i];
+                    var wait = 0.5;
+                    var delay = 0.1;
+                    console.log(bandeau);
+                    bandeau.style.transform = "translateX(0%)";
+                    bandeau.style.transitionDelay = wait + i * delay + "s";
+                    //second console output
+                }
+                toggle = false;
+            }
+            // if (innerWidth < 740) {
+            //     popUpProg.style.width = "100%";
+            //     popUpProg.style.transform = "translateX(0px)";
+            // }
+
+            // console.log(progBtn[0]);
+            // console.log(popUpProg[0]);
+
+            // progBtn[0].addEventListener('click', () => {
+            //   console.log('hey');
+            //   popUpProg[0].classList.toggle('showPop')
+
+            //   popUpProg[0].addEventListener('click', hide)
+
+            // })
+
+            // function hide(e) {
+            //   if (e.target == e.currentTarget){
+            //     popUpProg[0].classList.toggle('showPop')
+
+            //   }
+
+            // }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Natives</title>
+    <link rel="stylesheet" href="css/wip.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+<div class="nav-logo">
+    <a href ="index.html"><img class="logo" src="images/logo noir.svg" alt="Logo Digital Natives, un N mélangée à un D"></a>
+</div>
+<div class="container">
+        <div class="carre">
+            <h1 class="header-text">EN CONSTRUCTION</h1>
+            <p class="loading">Ce site est actuellement en construction.</p>
+        </div>
+    </div>
+    <div class="textebas">
+        <div class="texte-box">
+            <p>Rendez-vous le 6 avril 2023.</p>
+        </div>
+    </div>
+    <script>
+        const loadingText = document.querySelector(".loading");
+        let dots = 0;
+        setInterval(() => {
+            dots = (dots + 1) % 4;
+            loadingText.innerText = "Ce site est actuellement en construction" + ".".repeat(dots);
+        }, 500);
+    </script>
+</body>
+</html>
