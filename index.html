@@ -17,21 +17,15 @@
 <div class="premiere-partie">
     <p>.</p>
     <header>
-        <!----
-    <div class="navbar">
-            <a href ="index.html" class="bar"><img class="logo" src="HUB/images/Logo.svg" alt="Logo Digital Natives, un N mélangée à un D"></a>
-            <a href="#presentation" class="bar" data-scroll="presentation">Présentation</a>
-            <a href="#derniercolloque" class="bar" data-scroll="derniercolloque">Dernier colloque</a>
-            <a href="#archive" class="bar" data-scroll="archive">Archives</a> 
-           
-    </div>-->
+ 
     <div class="navbar">
         <div class="container nav-container">
             <a href ="index.html" class="bar"><img class="logo" src="HUB/images/Logo.svg" alt="Logo Digital Natives, un N mélangée à un D"></a>
             <a href="#presentation" class="bar" data-scroll="presentation">Présentation</a>
             <a href="#derniercolloque" class="bar" data-scroll="derniercolloque">Dernier colloque</a>
             <a href="#archive" class="bar" data-scroll="archive">Archives</a>
-            <a href="#intervenant" class="bar" data-scroll="intervenant">Intervenant</a>
+            <a href="#noustrouver" class="bar" data-scroll="noustrouver">Nous trouver</a>
+           
             <input class="checkbox" type="checkbox"/>
             
             <div class="hamburger-lines">
@@ -44,7 +38,7 @@
             <a href="#presentation" class="burger" data-scroll="presentation">Présentation</a>
             <a href="#derniercolloque" class="burger" data-scroll="derniercolloque">Dernier colloque</a>
             <a href="#archive" class="burger" data-scroll="archive">Archives</a>
-            <a href="#intervenant" class="burger" data-scroll="intervenant">Intervenant</a>
+            <a href="#noustrouver" class="bar" data-scroll="noustrouver">Nous trouver</a>
           </div>
         </div>
       </div>
@@ -59,11 +53,11 @@
 <div class="bloc">
     <div class="bloctexte">
         <p class="titre3">UN ÉVÉNEMENT ENGAGÉ</p>
-        <p class ="paragraphe">Sensibiliser sur des <strong>sujets sociétaux</strong> en lien avec le numérique:<br>
-            c’est le défi que se sont lancés les étudiants passionnés de <strong>Métiers du<br>
-            Multimédia et de l’Internet (MMI)</strong> de l’université Bordeaux Montaigne.<br>
-            Digital Natives , une journée scientifique qui se dédie à <strong>éveiller les<br>
-            consciences</strong> des utilisateurs dans un monde où la technologie est de<br>
+        <p class ="paragraphe">Sensibiliser sur des <span class="bold">sujets sociétaux</span> en lien avec le numérique:<br>
+            c’est le défi que se sont lancés les étudiants passionnés de <span class="bold">Métiers du<br>
+            Multimédia et de l’Internet (MMI)</span> de l’université Bordeaux Montaigne.<br>
+            Digital Natives , une journée scientifique qui se dédie à <span class="bold">éveiller les<br>
+            consciences</span> des utilisateurs dans un monde où la technologie est de<br>
             plus en plus prépondérante.</p>
     </div>
     <img class="imageparagraphe" src="HUB/images/placeholder.png" alt="placeholder">
@@ -82,19 +76,26 @@
 <div class="archives">
 <p class="titre6" id="archive">Archives</p>
     <div class="blocimage">
-        <a href="wip.html"><img class="carte2023 card" onclick="autoScroll()" src="HUB/images/placeholder cartetexte.png" alt="carte 2023"></a>
-        <a href="2022.html"><img class="carte2022 card" src="HUB/images/image2022text.png" alt="carte 2022"></a>
+        <div class="card-archives-1">
+            <a href="2023/wip.html"><img class="carte2023 card" src="HUB/images/carte_2023.png" alt="carte 2023" width="800px"></a>
+            <p class="titre-archives" style="left: 2vw; top: 15vw;">Handicap & Numérique</p>
+            <p class="date-archives" style="left: 2vw;top: 18.5vw;">Colloque MMI 2023</p>
+        </div>
+        <div class="card-archives-2">
+            <a href="2022/2022.html"><img class="carte2022 card" src="HUB/images/carte_2022.png" alt="carte 2022" width="800px"></a>
+            <p class="titre-archives" style="left: 2vw; top: 15vw;">La confiance & Numérique</p>
+            <p class="date-archives" style="left: 2vw;top: 18.5vw;">Colloque MMI 2023</p>
+        </div>
     </div>
 </div>
-<div>
-    <p class="titre6" style="margin-top: 90px; margin-left: 11vw;"> Où nous trouver ? </p>
+<div class="noustrouver">
+    <p class="titre6 noustrouvertext" id="noustrouver"> Où nous trouver ? </p>
     <div class="maps">
         <iframe class="maps"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.5571178581376!2d-0.5643382485046694!3d44.830586478996054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55264a9fd1515f%3A0x2069c2b4402ca5e2!2sIUT%20Bordeaux%20Montaigne!5e0!3m2!1sfr!2sfr!4v1677080375864!5m2!1sfr!2sfr" 
         width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
     </div>
 </div>
-
 
 
 
@@ -155,7 +156,7 @@ footer h3{
     flex-direction: row;
     margin-left: 4.5vw;
     width: calc(100vw - 9vw);
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .soc-foot{
@@ -219,60 +220,10 @@ footer h3{
             <a href="" class="footer-a"><p>Edition 2022</p></a>
             
         </div>
-        <div class="bloc-contenu">
-            <h3>Programme</h3>
-            
-        </div>
+        
     
     </div>
-    
-    <div class="colonne-footer mobile-display-n">
-    
-        <div class="bloc-contenu">
-            <h3>PUBLIC</h3>
-            <a href="" class="footer-a"><p>Informations</p></a>
-            <a href="" class="footer-a"><p>Intervenants</p></a>
-            <a href="" class="footer-a"><p>Poster</p></a>
-            <a href="" class="footer-a"><p>Ouvrage</p></a>
-            <a href="" class="footer-a"><p>Live</p></a>
-            
-        </div>
-        <div class="bloc-contenu">
-            <h3>DISPOSITIFS INNOVANTS</h3>
-            <a href="" class="footer-a"><p>Informations</p></a>
-            <a href="" class="footer-a"><p>Intervenants</p></a>
-            <a href="" class="footer-a"><p>Poster</p></a>
-            <a href="" class="footer-a"><p>Ouvrage</p></a>
-            <a href="" class="footer-a"><p>Live</p></a>
-            
-            
-        </div>
-    
-    </div>
-    
-    <div class="colonne-footer mobile-display-n" >
-    
-        <div class="bloc-contenu">
-            <h3>ACCESSIBILITÉ</h3>
-            <a href="" class="footer-a"><p>Informations</p></a>
-            <a href="" class="footer-a"><p>Intervenants</p></a>
-            <a href="" class="footer-a"><p>Poster</p></a>
-            <a href="" class="footer-a"><p>Ouvrage</p></a>
-            <a href="" class="footer-a"><p>Live</p></a>
-            
-        </div>
-        <div class="bloc-contenu">
-            <h3>INCLUSIVITÉ</h3>
-            <a href="" class="footer-a"><p>Informations</p></a>
-            <a href="" class="footer-a"><p>Intervenants</p></a>
-            <a href="" class="footer-a"><p>Poster</p></a>
-            <a href="" class="footer-a"><p>Ouvrage</p></a>
-            <a href="" class="footer-a"><p>Live</p></a>
-            
-            
-        </div>
-    </div>
-    
+
     <div class="colonne-footer">
     
         <div class="bloc-contenu">
@@ -283,14 +234,7 @@ footer h3{
             <a href="" class="footer-a"><p>colloquemmi@mmibordeaux.com</p></a>
             
         </div>
-        <div class="bloc-contenu">
-            <h3>À PROPOS</h3>
-            <a href="" class="footer-a"><p>Les intervenants</p></a>
-            <a href="" class="footer-a"><p>Les élèves MMI</p></a>
-            <a href="" class="footer-a"><p>Les professeurs</p></a>
-            
-            
-        </div>
+       
         <div class="bloc-contenu-soc">
             <h3>NOS RÉSEAUX</h3>
             <div class="soc-img">

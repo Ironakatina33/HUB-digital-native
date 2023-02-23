@@ -15,7 +15,7 @@ window.addEventListener("scroll", () => {
     !navbar.classList.contains("hidden")
   ) {
     // Cache la barre de navigation
-    navbar.classList.add("hidden");
+    navbar.classList.remove("hidden");
   } else {
     // Affiche la barre de navigation
     navbar.classList.remove("hidden");

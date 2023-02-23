@@ -144,10 +144,12 @@ p {
 
 .hamburger-lines {
     display: none;
+
 }
 
 .checkbox {
     display: none;
+    color: #000000;
 }
 
 .titre2 {
@@ -179,8 +181,6 @@ p {
 
 .titre6 {
     font-family: 'Gotham Light', sans-serif;
-    align-items: center;
-    justify-content: center;
     height: 3vw;
     margin-top: 15vw;
     font-size: 2.9vw;
@@ -360,6 +360,49 @@ p {
     margin-right: 9vw;
 }
 
+.noustrouver {
+    display: flex;
+    flex-direction: column;
+    margin-left: 11vw;
+    margin-right: 9vw;
+}
+
+.maps {
+    margin-top: 1vw;
+}
+
+.noustrouvertext {
+    display: flex;
+}
+
+.bold {
+    font-family: "Gotham Black";
+}
+
+.titre-archives {
+    position: absolute;
+    font-size: 2vw;
+    font-family: "Gotham Black";
+    color: white;
+}
+
+.date-archives {
+    position: absolute;
+    font-size: 1.2vw;
+    font-family: "Gotham";
+    color: white;
+}
+
+.card-archives-1 {
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+.card-archives-2 {
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
 @media (max-width: 768px) {
     .corps {
         display: flex;
@@ -449,6 +492,15 @@ p {
     .menu-itemps {
         display: block;
     }
+    .checkbox {
+        color: #000000;
+    }
+    .noustrouvertext {
+        justify-content: center;
+    }
+    .maps {
+        margin-top: 3vw;
+    }
 }
 
 
@@ -459,7 +511,6 @@ iframe.maps {
 	top: 3280px;
 	border: 1px solid #000000;
 	border-radius: 20px;
-	margin: auto;
 }
 	
 div.maps {
@@ -618,7 +669,7 @@ div.maps {
       height: 4px;
       width: 100%;
       border-radius: 10px;
-      background: #fff;
+      background: grey;
     }
     
     .nav-container .hamburger-lines .line1 {
@@ -645,7 +696,7 @@ div.maps {
       flex-direction: column;
       transition: transform 0.5s ease-in-out;
       text-align: center;
-      background: #fff;
+      background-image: url("/HUB/images/Rectangle 1.png");
     }
     
     .navbar .menu-items li {
@@ -680,5 +731,10 @@ div.maps {
     
     .nav-container input[type="checkbox"]:checked ~ .logo{
       display: none;
+      color: #000000;
     }
   }
+
+
+
+ 
