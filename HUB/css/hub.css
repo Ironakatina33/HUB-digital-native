@@ -501,6 +501,14 @@ p {
     .maps {
         margin-top: 3vw;
     }
+    .titre-archives {
+        font-size: 6vw;
+    }
+    .date-archives {
+        font-size: 4.2vw;
+        left: 2vw;
+        top: 32.5vw;
+    }
 }
 
 
